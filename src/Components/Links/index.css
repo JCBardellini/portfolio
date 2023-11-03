@@ -1,0 +1,12 @@
+#linkContainer {
+    transform: rotate(90deg);
+    max-height: 30px;
+    display: flex;
+    align-items:end;
+    margin-top: 45px;
+    gap: 10px;
+}
+.linkItems a {
+    text-decoration: none;
+    color: inherit;
+}

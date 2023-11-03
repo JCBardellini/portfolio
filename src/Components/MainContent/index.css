@@ -1,0 +1,7 @@
+#mainContentContainer {
+    border: 1.25px solid black;
+    margin: 35px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+}
