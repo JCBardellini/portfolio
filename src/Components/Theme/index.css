@@ -1,4 +1,7 @@
 #themeContainer {
     display: flex;
     align-items: flex-end;
+    margin-top: auto;
+    transform: rotate(-90deg) translateX(45px);
+    gap: 10px;
 }
