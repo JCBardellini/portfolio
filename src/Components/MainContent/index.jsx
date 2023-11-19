@@ -9,15 +9,13 @@ import Projects from "../../Pages/Projects";
 const MainContent = () => {
   return (
     <div id="mainContentContainer">
-      <div>
-        <header>
-          <h1>Jean Carlo (JC) Bardellini</h1>
-          <p>Developer & Designer</p>
-        </header>
+      <header className="portfolioHeader">
+        <h1 className="headerName">JC Bardellini</h1>
+        <p className="role">Designer & Developer</p>
         <nav>
           <Navbar />
         </nav>
-      </div>
+      </header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

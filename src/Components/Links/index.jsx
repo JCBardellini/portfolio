@@ -23,7 +23,7 @@ const OutsideLinks = () => {
         return (
           <p className="linkItems" key={link.name}>
             <a href={link.url} target="_blank" alt={link.name}>
-              {link.name}
+              {link.name.toLocaleUpperCase()}
             </a>
           </p>
         );

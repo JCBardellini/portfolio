@@ -9,4 +9,6 @@
 .linkItems a {
     text-decoration: none;
     color: inherit;
+    line-height: 150%;
+    letter-spacing: 1px;
 }
