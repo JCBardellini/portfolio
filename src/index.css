@@ -1,6 +1,43 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  margin: 0 50px;
+}
+
+/* Font Sizes */
+
+p {
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 200;
+}
+
+/* Button Layout */
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  width: 6.25rem;
+  height: 2.5rem;
+  background: none;
+  border: 1px solid #000;
+}
+/* section title css line  */
+.titleContainer {
+  display: flex;
+  align-items: center;
+}
+.sectionTitle {
+  margin: 0 10px;
+}
+.sectionNumber {
+  margin-right: 10px;
+}
+.line {
+  flex: 1;
+  border-bottom: 1px solid #000;
+  /* margin: 0 10px; */
 }

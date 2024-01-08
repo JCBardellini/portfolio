@@ -1,0 +1,15 @@
+#navLayout {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  height: 60px;
+}
+.nav {
+  display: flex;
+}
+.nav li {
+  list-style-type: none;
+  margin-left: 20px;
+}
