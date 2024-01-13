@@ -15,15 +15,31 @@ p {
   line-height: 150%;
   font-weight: 200;
 }
+h2 {
+  font-size: 2.375rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+h3 {
+  font-size: 1.125rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+.clientTitle {
+  font-size: 0.75rem;
+  font-weight: 200;
+  line-height: 150%;
+}
 
 /* Button Layout */
 .btn {
   display: inline-block;
   border-radius: 5px;
-  width: 6.25rem;
-  height: 2.5rem;
+  padding: 10px 40px;
+  align-items: center;
   background: none;
   border: 1px solid #000;
+  cursor: pointer;
 }
 /* section title css line  */
 .titleContainer {
@@ -40,4 +56,11 @@ p {
   flex: 1;
   border-bottom: 1px solid #000;
   /* margin: 0 10px; */
+}
+
+/* Media queries */
+@media (max-width: 767px) {
+  body {
+    margin: 0 20px;
+  }
 }

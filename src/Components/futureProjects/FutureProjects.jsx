@@ -1,4 +1,5 @@
 import React from "react";
+import css from "./FutureProjects.module.css";
 
 const FutureProjects = () => {
   const projectsComing = [
@@ -23,11 +24,13 @@ const FutureProjects = () => {
         <h3 className="sectionTitle">Projects in the Work</h3>
         <span className="line"></span>
       </div>
-      <div className="">
+      <div id={css.futureProjectsContainer}>
         {projectsComing.map((project) => (
-          <div key={project.title}>
-            <p>{project.client ? "Client Project" : "Personal Project"}</p>
-            <h4>{project.title}</h4>
+          <div key={project.title} className={css.eachProjectContainer}>
+            <p className="clientTitle">
+              {project.client ? "Client" : "Personal"} Project
+            </p>
+            <h3>{project.title}</h3>
             <p>{project.description}</p>
           </div>
         ))}

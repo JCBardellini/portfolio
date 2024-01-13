@@ -1,0 +1,26 @@
+#contactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0;
+}
+.contactHeading {
+  margin: 0 auto;
+}
+
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.iconsContainer img {
+  cursor: pointer;
+}
+
+.contactBtn {
+  margin: 0 auto;
+}

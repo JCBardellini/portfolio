@@ -1,0 +1,15 @@
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.eachProjectContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 20px 15px;
+  background-color: antiquewhite;
+  gap: 20px;
+}
