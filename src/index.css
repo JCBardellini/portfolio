@@ -5,9 +5,19 @@
   font-family: "Inter", sans-serif;
 }
 body {
-  margin: 0 50px;
+  margin: 0 40px;
 }
+/* Page Sections */
 
+#aboutSection,
+#homeSection,
+#experienceSection,
+#projectSection,
+#futureProjectSection,
+#contactSection {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 /* Font Sizes */
 
 p {
@@ -24,6 +34,10 @@ h3 {
   font-size: 1.125rem;
   line-height: 150%;
   font-weight: 400;
+}
+li {
+  line-height: 150%;
+  font-weight: 200;
 }
 .clientTitle {
   font-size: 0.75rem;
@@ -59,6 +73,7 @@ h3 {
 }
 
 /* Media queries */
+
 @media (max-width: 767px) {
   body {
     margin: 0 20px;

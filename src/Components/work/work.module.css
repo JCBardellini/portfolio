@@ -1,0 +1,23 @@
+.experienceContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.companyContainer {
+  width: 20%;
+}
+.company {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 200;
+  list-style-type: none;
+}
+.descriptionContainer {
+  width: 79%;
+}
+.descriotionBulletPoint {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}

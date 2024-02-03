@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <section>
+    <section id="homeSection">
       <p>Hi, my name is</p>
       <h2>JC Bardellini.</h2>
       <h2>Welcome to my Digital Playground!</h2>

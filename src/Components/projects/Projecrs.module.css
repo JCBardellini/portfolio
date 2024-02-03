@@ -13,3 +13,6 @@
   background-color: antiquewhite;
   gap: 20px;
 }
+.container {
+  gap: 10px;
+}

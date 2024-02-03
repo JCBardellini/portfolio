@@ -6,7 +6,7 @@ const { Navbar, About, Contact, Footer, FutureProjects, Home, Projects, Work } =
 
 const Layout = () => {
   return (
-    <>
+    <main>
       {/* <Navbar /> */}
       <Home />
       <About />
@@ -15,7 +15,7 @@ const Layout = () => {
       <FutureProjects />
       <Contact />
       <Footer />
-    </>
+    </main>
   );
 };
 

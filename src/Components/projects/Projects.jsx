@@ -79,14 +79,17 @@ const Projects = () => {
   };
 
   return (
-    <section className={`${css.projectsContainer} projects`}>
+    <section
+      id="projectSection"
+      className={`${css.projectsContainer} projects`}
+    >
       <div className="titleContainer">
         <h3 className="sectionNumber">03.</h3>
         <span className="line"></span>
         <h3 className="sectionTitle">Creations I've Built</h3>
         <span className="line"></span>
       </div>
-      <div className={""}>
+      <div className={`${css.container}`}>
         {projectsCompleted.slice(0, showProject).map((eachProject) => (
           <div key={eachProject.id} className={css.eachProjectContainer}>
             <p className="clientTitle">

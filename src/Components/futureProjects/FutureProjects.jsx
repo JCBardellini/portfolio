@@ -17,7 +17,7 @@ const FutureProjects = () => {
     },
   ];
   return (
-    <section>
+    <section id="futureProjectSection">
       <div className="titleContainer">
         <h3 className="sectionNumber">04.</h3>
         <span className="line"></span>
