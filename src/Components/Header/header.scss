@@ -1,0 +1,14 @@
+#header {
+    width: 99%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
+
+    .description {
+        width: 75%;
+    }
+}

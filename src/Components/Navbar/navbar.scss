@@ -1,0 +1,90 @@
+@import "../../styles/variables.scss";
+
+#navLayout {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: $backgroundColor;
+
+   .logo {
+    width: 75px;
+    cursor: pointer;
+   }
+   .menu {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5px;
+    width: 2.2rem;
+    height: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    cursor: pointer;
+
+    .one, .two, .three {
+        width: 100%;
+        background-color: #333;
+        height: 0.4rem;
+        border-radius: 0.2rem;
+    }
+   }
+
+   .navbar {
+    display: flex;
+    gap: 50px;
+    margin-right: 10px;
+    align-items: center;
+   }
+
+    .navLinks {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        .navItem a {
+            text-decoration: none;
+            color: $textColor;
+        }
+        .navItem a:hover {
+            color: $hoverColor;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+    }
+}
+
+@media (max-width: $tabletBreakpoint) {
+    #navLayout {
+        flex-direction: column;
+        align-items: start;
+        padding-top: 10px;
+
+        .menu {
+            display: flex;
+        }
+
+        .navbar {
+            display: none;
+            flex-direction: column;
+            gap: 15px;
+            margin: 0 auto;
+            padding: 10px 0;
+
+            .navLinks {
+                flex-direction: column;
+
+                .navItem {
+                    text-align: center;
+                }
+            }
+
+            &.open {
+                display: flex;
+            }
+        }
+    }
+}

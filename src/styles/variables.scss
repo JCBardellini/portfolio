@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+// Font style
+$fontFamily:  "Kumbh Sans", sans-serif;
+$fontSizeWeb: 1.125rem; // 18px - font size Web size
+$fontSizeTablet: 1rem; // 16px - font size for tablets 
+$fontSizeMobile: .875rem; // 14px - font size for mobile 
+$lineHeight: 150%;
+
+// Colors
+$backgroundColor: #EAE7DC;  
+$textColor: #333;
+$hoverColor: #e85a4f;
+
+// Button
+
+
+// Breakpoints
+$smallMobileBreakpoint: 320px;
+$mobileBreakpoint: 480px;
+$tabletBreakpoint: 768px;
+$desktopBreakpoint: 1024px;
+$largeDesktopBreakpoint: 1200px;
+
+
+

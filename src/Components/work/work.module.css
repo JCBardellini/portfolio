@@ -1,23 +1,47 @@
 .experienceContainer {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 30px 0;
+  gap: 50px;
 }
 .companyContainer {
   width: 20%;
 }
 .company {
-  margin: 10px 0;
+  margin: 15px 0;
   font-size: 18px;
   font-weight: 200;
   list-style-type: none;
 }
 .descriptionContainer {
-  width: 79%;
+  width: 80%;
 }
-.descriotionBulletPoint {
+.descriptionBulletPoint {
   list-style-type: none;
   display: flex;
   gap: 10px;
-  margin: 10px 0;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+@media (max-width: 1023px) {
+  .company {
+    min-width: 150px;
+  }
+}
+@media (max-width: 767px) {
+  .experienceContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .companyContainer {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    overflow: scroll;
+  }
+  .company {
+    width: 100%;
+    margin: 10px auto;
+  }
 }

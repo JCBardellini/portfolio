@@ -79,10 +79,7 @@ const Projects = () => {
   };
 
   return (
-    <section
-      id="projectSection"
-      className={`${css.projectsContainer} projects`}
-    >
+    <section id="about" className={`${css.projectsContainer} projects`}>
       <div className="titleContainer">
         <h3 className="sectionNumber">03.</h3>
         <span className="line"></span>

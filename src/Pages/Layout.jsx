@@ -1,14 +1,15 @@
 import React from "react";
 import * as Components from "../Components";
+import Header from "../Components/Header/Header";
 
 const { Navbar, About, Contact, Footer, FutureProjects, Home, Projects, Work } =
   Components;
 
 const Layout = () => {
   return (
-    <main>
-      {/* <Navbar /> */}
-      <Home />
+    <main id="pageLayout">
+      <Navbar />
+      <Header />
       <About />
       <Work />
       <Projects />

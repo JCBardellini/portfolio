@@ -1,0 +1,130 @@
+@import "./variables.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $fontFamily;
+    margin: 0 40px;
+    background-color: $backgroundColor;
+    color: $textColor;
+}
+
+#pageLayout {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// Font Sizing
+
+a {
+    line-height: $lineHeight;
+    font-size: $fontSizeWeb;
+}
+
+
+
+// Button Layout
+
+.btn {
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: .875rem;
+    align-items: center;
+    background: none;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid $textColor;
+    background: #e98074;
+    // need to edit the hover effect
+}
+
+
+
+/* Font Sizes */
+
+p {
+    font-size: 1rem;
+    line-height: 150%;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 2.375rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: #e85a4f;
+}
+
+h3 {
+    font-size: 1.125rem;
+    line-height: 150%;
+    font-weight: 400;
+    color: #e85a4f;
+}
+
+.clientTitle {
+    font-size: 0.75rem;
+    font-weight: 200;
+    line-height: 150%;
+}
+
+/* section title css line  */
+.titleContainer {
+    display: flex;
+    align-items: center;
+}
+
+.sectionTitle {
+    margin: 0 10px;
+}
+
+.sectionNumber {
+    margin-right: 10px;
+}
+
+.line {
+    flex: 1;
+    border-bottom: 1px solid #e98074;
+    /* margin: 0 10px; */
+}
+
+/* Media queries */
+
+
+
+
+// Media Queries 
+@media (max-width: $largeDesktopBreakpoint) {
+    a {
+        font-size: $fontSizeWeb;
+    }
+}
+
+@media (max-width: $desktopBreakpoint) {
+    a {
+        font-size: $tabletBreakpoint;
+    }
+}
+
+@media (max-width: $tabletBreakpoint) {
+    a {
+        font-size: $fontSizeTablet;
+    }
+}
+
+@media (max-width: $mobileBreakpoint) {
+    body {
+        margin: 0 20px;
+    }
+    a {
+        font-size: $fontSizeMobile;
+    }
+}
+// maybe add small mobile breakpoint

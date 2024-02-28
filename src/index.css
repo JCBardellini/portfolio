@@ -1,23 +1,5 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Inter", sans-serif;
-}
-body {
-  margin: 0 40px;
-}
-/* Page Sections */
+@import "./styles/main.scss";
 
-#aboutSection,
-#homeSection,
-#experienceSection,
-#projectSection,
-#futureProjectSection,
-#contactSection {
-  max-width: 1440px;
-  margin: 0 auto;
-}
 /* Font Sizes */
 
 p {
@@ -29,15 +11,13 @@ h2 {
   font-size: 2.375rem;
   font-weight: 400;
   line-height: 150%;
+  color: #e85a4f;
 }
 h3 {
   font-size: 1.125rem;
   line-height: 150%;
   font-weight: 400;
-}
-li {
-  line-height: 150%;
-  font-weight: 200;
+  color: #e85a4f;
 }
 .clientTitle {
   font-size: 0.75rem;
@@ -45,16 +25,6 @@ li {
   line-height: 150%;
 }
 
-/* Button Layout */
-.btn {
-  display: inline-block;
-  border-radius: 5px;
-  padding: 10px 40px;
-  align-items: center;
-  background: none;
-  border: 1px solid #000;
-  cursor: pointer;
-}
 /* section title css line  */
 .titleContainer {
   display: flex;
@@ -68,7 +38,7 @@ li {
 }
 .line {
   flex: 1;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #e98074;
   /* margin: 0 10px; */
 }
 
