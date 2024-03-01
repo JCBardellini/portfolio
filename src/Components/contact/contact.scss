@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+
+#contact {
+    height: 50vh;
+    width: 99%;
+
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+       height: 100%;
+    }
+    p {
+        width: 80%;
+        text-align: center;
+    }
+    .iconsContainer {
+        display: flex;
+        gap: 15px;
+
+        img {
+            cursor: pointer;
+        }
+
+    }
+}
+
+
+@media (max-width: $tabletBreakpoint) {
+    #contact{
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: $mobileBreakpoint) {
+   #contact {
+    height: 60vh;
+   } 
+}

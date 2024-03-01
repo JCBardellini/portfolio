@@ -3,8 +3,8 @@ import "./header.scss";
 import typingEffect from "../Hooks/Animation/typingEffect";
 
 const Header = () => {
-  const text = "C Bardellini!";
-  const duration = 400;
+  const text = "c Bardellini!";
+  const duration = 300;
   const textEffect = typingEffect(text, duration);
   return (
     <section id="header">

@@ -1,5 +1,6 @@
 import React from "react";
 import css from "./about.module.css";
+import "./about.scss";
 import bulletPoint from "../../assets/Icons/optionsVector.svg";
 import userImg from "../../assets/img/userImg.png";
 
@@ -23,9 +24,9 @@ const About = () => {
     "Node.js",
   ];
   return (
-    <section id="aboutSection">
+    <section id="about">
       <div className="titleContainer">
-        <h3 className="sectionNumber">01.</h3>
+        <h3 className="sectionNumber">0.1</h3>
         <span className="line"></span>
         <h3 className="sectionTitle">About Me</h3>
         <span className="line"></span>

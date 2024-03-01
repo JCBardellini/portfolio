@@ -1,5 +1,5 @@
 import React from "react";
-import css from "./ contact.module.css";
+import "./contact.scss";
 import github from "../../assets/Icons/gitHub.png";
 import linkedIn from "../../assets/Icons/linkedIn.png";
 import fileDoc from "../../assets/Icons/File.png";
@@ -41,23 +41,23 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="titleContainer">
-        <h3 className="sectionNumber">05.</h3>
+        <h3 className="sectionNumber">0.5</h3>
         <span className="line"></span>
         <h3 className="sectionTitle">What Lies Ahead</h3>
         <span className="line"></span>
       </div>
-      <div id={css.contactContainer}>
-        <h2 className={`${css.contactHeading} heading`}>Get in Touch</h2>
+      <div className="contactContainer">
+        <h2 className="contactHeading heading">Get in Touch</h2>
         <p>
           I am currently exploring opportunities and welcome anyone to reach out
           to me through my socials or via email! Whether it’s discussing food,
           coffee, designs, or anything, feel free to connect. I’m always eager
           to make new connections and engage in meaningful conversations.
         </p>
-        <button className={`${css.contactBtn} btn`} onClick={onClickEmail}>
+        <button className="contactBtn btn" onClick={onClickEmail}>
           Lets Connect!
         </button>
-        <div className={css.iconsContainer}>
+        <div className="iconsContainer">
           {icons.map((icon) => (
             <img
               src={icon.iconSrc}

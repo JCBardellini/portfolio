@@ -23,10 +23,15 @@ const Navbar = () => {
   const handleClickMenu = () => {
     setIsMobileView(!isMobileView);
   };
+  const handleScrollToTop = () => {
+    scroll.scrollToTop({
+      duration: 2000,
+    });
+  };
 
   return (
     <nav id="navLayout">
-      <img src={logo} alt="logo" className="logo" />
+      <img src={logo} alt="logo" className="logo" onClick={handleScrollToTop} />
       <div className="menu" onClick={handleClickMenu}>
         <span className="one"></span>
         <span className="two"></span>

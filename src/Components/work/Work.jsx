@@ -63,7 +63,7 @@ const Work = () => {
     setDisplayCompany(company);
   };
   return (
-    <section id="experienceSection">
+    <section id="work-experience">
       <div className="titleContainer">
         <h3 className="sectionNumber">02.</h3>
         <span className="line"></span>

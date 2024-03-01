@@ -79,21 +79,23 @@ h3 {
 .titleContainer {
     display: flex;
     align-items: center;
+    width: 99%;
+
+    .sectionTitle {
+        margin: 0 10px;
+    }
+    
+    .sectionNumber {
+        margin-right: 10px;
+    }
+    
+    .line {
+        flex: 1;
+        border-bottom: 1px solid #e98074;
+        /* margin: 0 10px; */
+    }
 }
 
-.sectionTitle {
-    margin: 0 10px;
-}
-
-.sectionNumber {
-    margin-right: 10px;
-}
-
-.line {
-    flex: 1;
-    border-bottom: 1px solid #e98074;
-    /* margin: 0 10px; */
-}
 
 /* Media queries */
 
