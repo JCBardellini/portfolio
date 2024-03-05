@@ -2,12 +2,26 @@ import React, { useState } from "react";
 import liveSiteIcon from "../../assets/Icons/liveSite.png";
 import figmaIcon from "../../assets/Icons/figma.png";
 import gitHub from "../../assets/Icons/gitHub.png";
-import css from "./Projecrs.module.css";
+import caseStudy from "../../assets/Icons/case-study.png";
+import "./projects.scss";
 
 const Projects = () => {
   const [showProject, setShowProject] = useState(3);
   const [expanded, setExpanded] = useState();
   const projectsCompleted = [
+    {
+      id: 11,
+      client: true,
+      title: "Standpat (MVP)",
+      description:
+        "An author portfolio to showcase and sell his book. The connections that he has made with the public as a educator, peer or anyone that he came across his life.",
+      image: "",
+      techStack: "React js, Express, Nodemailer, SCSS, etc",
+      github: "",
+      figma: "",
+      liveSite: "",
+      caseStudy: "",
+    },
     {
       id: 1,
       client: true,
@@ -20,6 +34,7 @@ const Projects = () => {
       liveSite: "https://samminailsspa.com/",
       figma:
         "https://www.figma.com/file/ba7cLeNvT4Jchu0YNLyNLg/Jc-lo-fi-wireframes?type=design&node-id=0%3A1&mode=design&t=2YwdNUfZgNraQMhd-1",
+      caseStudy: "",
     },
     {
       id: 2,
@@ -31,6 +46,7 @@ const Projects = () => {
       techStack: "React.js, Mongodb, Express, User Auth, useContext, etc.",
       gitHub: "adasd",
       liveSite: "addas",
+      caseStudy: "",
     },
     {
       id: 3,
@@ -42,6 +58,7 @@ const Projects = () => {
       techStack: "React.js, Spotify API, useContext, Local Storage, etc.",
       gitHub: "ads",
       liveSite: "adsa",
+      caseStudy: "",
     },
     {
       id: 4,
@@ -53,6 +70,7 @@ const Projects = () => {
       techStack: "HTML5, CSS3, JavaScript, Open Weather Map API, etc.",
       gitHub: "asdda",
       liveSite: "asdadsa",
+      caseStudy: "",
     },
   ];
   const projectIcons = [
@@ -71,6 +89,11 @@ const Projects = () => {
       alt: "Figma icon",
       linkKey: "figma",
     },
+    {
+      icon: caseStudy,
+      alt: "Case Study",
+      linkKey: "caseStudy",
+    },
   ];
 
   const handleShowMore = () => {
@@ -79,43 +102,48 @@ const Projects = () => {
   };
 
   return (
-    <section id="about" className={`${css.projectsContainer} projects`}>
+    <section id="projects">
       <div className="titleContainer">
         <h3 className="sectionNumber">03.</h3>
         <span className="line"></span>
         <h3 className="sectionTitle">Creations I've Built</h3>
         <span className="line"></span>
       </div>
-      <div className={`${css.container}`}>
+      <div className="projectContainer">
         {projectsCompleted.slice(0, showProject).map((eachProject) => (
-          <div key={eachProject.id} className={css.eachProjectContainer}>
-            <p className="clientTitle">
-              {eachProject.client ? "Client" : "Personal"} Project
-            </p>
-            <h3>{eachProject.title}</h3>
-            <p>{eachProject.description}</p>
-            <p>Tech Stack</p>
-            <p>{eachProject.techStack}</p>
-            <div className="iconsContainer">
-              {projectIcons.map(
-                (icon) =>
-                  eachProject[icon.linkKey] && (
-                    <a
-                      key={icon.alt}
-                      href={eachProject[icon.linkKey]}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src={icon.icon} alt={icon.alt} />
-                    </a>
-                  )
-              )}
+          <div key={eachProject.id} className="eachProjectContainer">
+            <div>
+              <p className="clientTitle">
+                {eachProject.client ? "Client" : "Personal"} Project
+              </p>
+              <img src={eachProject.image} alt={eachProject.title} />
+            </div>
+            <div>
+              <h3>{eachProject.title}</h3>
+              <p>{eachProject.description}</p>
+              <p>Tech Stack</p>
+              <p>{eachProject.techStack}</p>
+              <div className="iconsContainer">
+                {projectIcons.map(
+                  (icon) =>
+                    eachProject[icon.linkKey] && (
+                      <a
+                        key={icon.alt}
+                        href={eachProject[icon.linkKey]}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src={icon.icon} alt={icon.alt} />
+                      </a>
+                    )
+                )}
+              </div>
             </div>
           </div>
         ))}
       </div>
       {/*Have a button, that will expand the projects but only show 3 so far */}
-      <button className={`${css.projectsBtn} btn`} onClick={handleShowMore}>
+      <button className="btn" onClick={handleShowMore}>
         {expanded ? "Show Less" : "See More Projects"}
       </button>
     </section>

@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import css from "./work.module.css";
 import customBullet from "../../assets/Icons/optionsVector.svg";
+import "./work.scss";
 
 const Work = () => {
   // managing state to display the selected role
   const [displayCompany, setDisplayCompany] = useState("Innovis Solution");
-  // work experience array of objects
   const workExperience = [
     {
       company: "Innovis Solution",
-      role: "Co-Founder",
+      role: "Freelancer",
       date: "Nov 2023 - present",
       description: [
         "Leading a dynamic team of creative professionals in designing, developing, and maintaining web applications.",
@@ -58,42 +57,44 @@ const Work = () => {
       ],
     },
   ];
-  // need to create "toggleDisplayCompany" to show the description for the company i worked for
+
   const toggleDisplayCompany = (company) => {
     setDisplayCompany(company);
   };
   return (
     <section id="work-experience">
       <div className="titleContainer">
-        <h3 className="sectionNumber">02.</h3>
+        <h3 className="sectionNumber">0.2</h3>
         <span className="line"></span>
         <h3 className="sectionTitle">Places I've Worked</h3>
         <span className="line"></span>
       </div>
-      <div className={css.experienceContainer}>
-        {/* Contain company name */}
-        <ul className={css.companyContainer}>
+      <div className="workContainer">
+        <ul className="company">
           {workExperience.map((company) => (
             <li
               key={company.company}
-              className={css.company}
+              className={`companyName ${
+                displayCompany === company.company ? "active" : ""
+              }`}
               onClick={() => toggleDisplayCompany(company.company)}
             >
               {company.company}
             </li>
           ))}
         </ul>
-        {/* Contains the description */}
-        <div className={css.descriptionContainer}>
+        <div>
           {workExperience.map((work) => (
             <div key={work.company}>
               {displayCompany === work.company && (
-                <div>
-                  <h3>{`${work.role} @ ${work.company}`}</h3>
+                <div className="jobDescription">
+                  <h3 className="title">
+                    <span className="role">{work.role}</span> @ {work.company}
+                  </h3>
                   <p>{work.date}</p>
                   <ul>
                     {work.description.map((item, index) => (
-                      <li key={index} className={css.descriptionBulletPoint}>
+                      <li key={index} className="descriptionBulletPoint">
                         <span>
                           <img src={customBullet} alt="bullet point" />
                         </span>

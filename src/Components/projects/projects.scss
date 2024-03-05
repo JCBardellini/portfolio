@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    align-items: center;
+
+    .projectContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 50px 0px 50px 20px;
+
+        .eachProjectContainer {
+            display: flex;
+        }
+    }
+}

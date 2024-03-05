@@ -50,13 +50,19 @@ a {
 /* Font Sizes */
 
 p {
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 150%;
     font-weight: 200;
 }
 
-h2 {
+h1 {
     font-size: 2.375rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: #e85a4f;
+}
+h2 {
+    font-size: 2.25rem;
     font-weight: 400;
     line-height: 150%;
     color: #e85a4f;
@@ -67,6 +73,9 @@ h3 {
     line-height: 150%;
     font-weight: 400;
     color: #e85a4f;
+}
+li {
+    line-height: $lineHeight;
 }
 
 .clientTitle {
@@ -104,19 +113,21 @@ h3 {
 
 // Media Queries 
 @media (max-width: $largeDesktopBreakpoint) {
-    a {
-        font-size: $fontSizeWeb;
-    }
 }
 
 @media (max-width: $desktopBreakpoint) {
-    a {
-        font-size: $tabletBreakpoint;
+    body {
+        a {
+            font-size: $fontSizeTablet;
+        }
+        p {
+            font-size: $fontSizeTablet;
+        }
     }
 }
 
 @media (max-width: $tabletBreakpoint) {
-    a {
+    a, p {
         font-size: $fontSizeTablet;
     }
 }
@@ -124,9 +135,12 @@ h3 {
 @media (max-width: $mobileBreakpoint) {
     body {
         margin: 0 20px;
-    }
-    a {
-        font-size: $fontSizeMobile;
+        p {
+            font-size: $fontSizeMobile;
+        }
+        a {
+            font-size: $fontSizeMobile;
+        }
     }
 }
 // maybe add small mobile breakpoint

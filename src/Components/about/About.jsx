@@ -1,5 +1,4 @@
 import React from "react";
-import css from "./about.module.css";
 import "./about.scss";
 import bulletPoint from "../../assets/Icons/optionsVector.svg";
 import userImg from "../../assets/img/userImg.png";
@@ -7,7 +6,7 @@ import userImg from "../../assets/img/userImg.png";
 const About = () => {
   const aboutMeContent = {
     paragraphOne:
-      "Hello! I’m JC, short for Jean Carlo Bardellini. In my previous life, I was an Interior Designer working in West Seattle, crafting unique spaces that reflected my clients’ personalities. However, when the pandemic hit, I started reflecting on my life and thought how I could give back to the community that shaped the person I am today. This contemplation ultimately steered me toward a career in software development.",
+      "Hello! I’m Jc, short for Jean Carlo Bardellini. In my previous life, I was an Interior Designer working in West Seattle, crafting unique spaces that reflected my clients’ personalities. However, when the pandemic hit, I started reflecting on my life and thought how I could give back to the community that shaped the person I am today. This contemplation ultimately steered me toward a career in software development.",
     paragraphTwo:
       "Reflecting on my journey, I recall starting with HTML and CSS, but it was the discovery of JavaScript that ignited a new passion. Recently completing a coding bootcamp, I’ve acquired the skills and knowledge to thrive in the development world. Now, I’m on the lookout for a development role while staying true to my commitment of assisting local businesses in enhancing their online visibility.",
     paragraphThree:
@@ -20,7 +19,7 @@ const About = () => {
     "Figma",
     "Express",
     "PostgreSQL",
-    "Hostinger",
+    "Render",
     "Node.js",
   ];
   return (
@@ -31,19 +30,19 @@ const About = () => {
         <h3 className="sectionTitle">About Me</h3>
         <span className="line"></span>
       </div>
-      <div id={css.aboutSectionContainer}>
-        <div className={css.aboutContentContainer}>
+      <div id="aboutContainer">
+        <div className="aboutMe">
           <p>{aboutMeContent.paragraphOne}</p>
           <p>{aboutMeContent.paragraphTwo}</p>
           <p>{aboutMeContent.paragraphThree}</p>
           <p>Here is a few technologies that I've been working with:</p>
-          <div className={css.technologyContainer}>
+          <div className="technologyContainer">
             {[0, 2, 4, 6].map((startIndex) => (
-              <ul key={startIndex} className={css.technologyList}>
+              <ul key={startIndex} className="technologyList">
                 {technologies
                   .slice(startIndex, startIndex + 2)
                   .map((tech, index) => (
-                    <li key={index} className={css.eachTechnology}>
+                    <li key={index} className="eachTechnology">
                       <img src={bulletPoint} alt="custom bullet point" />
                       {tech}
                     </li>
@@ -58,14 +57,10 @@ const About = () => {
             creative professional.
           </p>
         </div>
-        <div className={css.imgContainer}>
-          <div className={css.imgBorder}></div>
+        <div className="imgContainer">
+          <div className="imgBorder"></div>
           {/* add a carousel of imgs */}
-          <img
-            className={css.responsiveImg}
-            src={userImg}
-            alt="Jc Bardellini"
-          />
+          <img className="responsiveImg" src={userImg} alt="Jc Bardellini" />
         </div>
       </div>
     </section>

@@ -14,8 +14,7 @@ const Navbar = () => {
     { name: "0.1 About", route: "/about" },
     { name: "0.2 Work Experience", route: "/work-experience" },
     { name: "0.3 Projects", route: "/projects" },
-    { name: "0.4 Future Projects", route: "/future-projects" },
-    { name: "0.5 Contact", route: "/contact" },
+    { name: "0.4 Contact", route: "/contact" },
   ];
   const handleDownload = () => {
     window.open(resume, "_blank");

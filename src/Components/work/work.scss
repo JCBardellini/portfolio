@@ -1,0 +1,59 @@
+@import "../../styles/variables.scss";
+
+#work-experience {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    height: auto;
+    align-items: center;
+
+    .workContainer {
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+        margin: 50px 0;
+
+        .company {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            list-style-type: none;
+            margin-left: 20px;
+            min-width: 200px;
+            
+            .companyName {
+                padding: 10px 0;
+                cursor: pointer;
+                width: auto;
+            }
+            .active {
+                color: $hoverColor;
+            }
+            .companyName:hover {
+                color: $hoverColor;
+            }
+        }
+
+        .jobDescription {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-right: 20px;
+            
+            .title {
+                color: $textColor;
+                .role {
+                    color: $hoverColor;
+                }
+            }
+            .descriptionBulletPoint {
+                display: flex;
+                gap: 15px;
+                padding: 10px 0;
+                list-style-type: none;
+            }
+        }
+    }
+}
+
+
