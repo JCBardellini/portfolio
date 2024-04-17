@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import "./navbar.scss";
 import logo from "../../assets/Logo/JCTransparent.svg";
@@ -41,7 +40,7 @@ const Navbar = () => {
           {navLink.map((nav) => (
             <li key={nav.name} className="navItem">
               <ScrollLink
-                to={nav.route.substring(1)} // Remove the leading slash to match the element's ID
+                to={nav.route.substring(1)}
                 spy={true}
                 smooth={true}
                 offset={-150}

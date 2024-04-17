@@ -120,14 +120,14 @@ li {
         a {
             font-size: $fontSizeTablet;
         }
-        p {
+        p, li {
             font-size: $fontSizeTablet;
         }
     }
 }
 
 @media (max-width: $tabletBreakpoint) {
-    a, p {
+    a, p, li {
         font-size: $fontSizeTablet;
     }
 }
@@ -138,7 +138,7 @@ li {
         p {
             font-size: $fontSizeMobile;
         }
-        a {
+        a, li {
             font-size: $fontSizeMobile;
         }
     }

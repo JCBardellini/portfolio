@@ -1,11 +1,13 @@
+@import "../../styles/variables.scss";
+
 #header {
     width: 99%;
-    margin: 0 auto;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    padding-left: 20px;
 
     .description {
         width: 75%;

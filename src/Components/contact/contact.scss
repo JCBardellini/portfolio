@@ -3,8 +3,6 @@
 #contact {
     height: auto;
     width: 99%;
-    padding: 25px 0;
-
     .contactContainer {
         display: flex;
         flex-direction: column;
@@ -25,16 +23,20 @@
         img {
             cursor: pointer;
         }
-
     }
 }
-
-
 @media (max-width: $tabletBreakpoint) {
     #contact{
-        padding-bottom: 20px;
+        // padding-bottom: 20px;
+        .contactContainer {
+            gap: 25px;
+        }
     }
 }
 @media (max-width: $mobileBreakpoint) {
-   
+   #contact {
+    .contactContainer {
+        gap: 20px;
+    }
+   }
 }

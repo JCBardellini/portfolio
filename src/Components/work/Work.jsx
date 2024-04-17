@@ -8,12 +8,12 @@ const Work = () => {
   const workExperience = [
     {
       company: "Innovis Solution",
-      role: "Freelancer",
-      date: "Nov 2023 - present",
+      role: "Freelancer - Developer/Designer",
+      date: "December 2023 - present",
       description: [
-        "Leading a dynamic team of creative professionals in designing, developing, and maintaining web applications.",
-        "Maintain high-level of communications with clients to understand their visions and expectations and collaborating with the team to meet and exceed those expectations.",
-        "Developing and maintaining web applications, stating current with the latest technologies to ensure the delivery of the best practices and experience. ",
+        "Effectively communicate with clients to fully understand their vision, expectations, and deadlines for creating webapps.",
+        "Collaborate closely with designers to develop websites that not only fit within their design constrains but also allow me to engage with the latest technologies, enhancing both functionality and user experience.",
+        "Optimize client communication, achieving fast turnarounds within a week, ensuring repeat customers, and maintaining a 90% client satisfaction rate based on post-project surveys.",
       ],
     },
     {

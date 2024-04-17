@@ -6,19 +6,18 @@ import userImg from "../../assets/img/userImg.png";
 const About = () => {
   const aboutMeContent = {
     paragraphOne:
-      "Hello! I’m Jc, short for Jean Carlo Bardellini. In my previous life, I was an Interior Designer working in West Seattle, crafting unique spaces that reflected my clients’ personalities. However, when the pandemic hit, I started reflecting on my life and thought how I could give back to the community that shaped the person I am today. This contemplation ultimately steered me toward a career in software development.",
-    paragraphTwo:
-      "Reflecting on my journey, I recall starting with HTML and CSS, but it was the discovery of JavaScript that ignited a new passion. Recently completing a coding bootcamp, I’ve acquired the skills and knowledge to thrive in the development world. Now, I’m on the lookout for a development role while staying true to my commitment of assisting local businesses in enhancing their online visibility.",
+      "A creative designer/developer previously worked as an interior designer crafting unique spaces reflecting my clients' personalities. I am now transitioning into software development, fueled by my passion for creativity, problem-solving, and creating meaningful experiences through technology.",
     paragraphThree:
-      "Currently freelancing to gain experience, I’m reaching out to small businesses, revamping their websites, and not just creating an online presence but also building lasting memories and friendships.",
+      "Currently freelancing to gain experience, I’m reaching out to small businesses, revamping their websites. This not only enhances their online presence but also builds lasting memories and friendships, aligning with my goal of contributing meaningfully to the community through technology.",
   };
+
   const technologies = [
     "JavaScript",
     "React.js",
     "MongoDB",
     "Figma",
     "Express",
-    "PostgreSQL",
+    "Java",
     "Render",
     "Node.js",
   ];
@@ -33,7 +32,6 @@ const About = () => {
       <div id="aboutContainer">
         <div className="aboutMe">
           <p>{aboutMeContent.paragraphOne}</p>
-          <p>{aboutMeContent.paragraphTwo}</p>
           <p>{aboutMeContent.paragraphThree}</p>
           <p>Here is a few technologies that I've been working with:</p>
           <div className="technologyContainer">

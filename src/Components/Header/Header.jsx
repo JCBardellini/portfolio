@@ -12,7 +12,7 @@ const Header = () => {
 
     if (projectsSection) {
       const yOffset =
-        projectsSection.getBoundingClientRect().top + window.scrollY;
+        projectsSection.getBoundingClientRect().top + window.scrollY - 100;
 
       window.scrollTo({
         top: yOffset,
@@ -28,9 +28,10 @@ const Header = () => {
       <h1 className="title">J{textEffect}</h1>
       <p className="description">
         I am a Designer and Developer dedicated to crafting digital experiences
-        and solutions to your everyday web challenge. With a focus on expanding
-        my knowledge in software development, I specialize in creating tailored
-        solutions for your web needs. Let's build something amazing together!
+        and solutions to your everyday challenge. With a focus on expanding my
+        knowledge in software development, I specialize in creating tailored
+        solutions for your software needs. Let's build something amazing
+        together!
       </p>
       {/*  */}
       <button className="btn homeBtn" onClick={handleClick}>
