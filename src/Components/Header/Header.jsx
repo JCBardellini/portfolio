@@ -1,15 +1,17 @@
 import React from "react";
 import "./header.scss";
 import typingEffect from "../Hooks/Animation/typingEffect";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const text = "c Bardellini!";
   const duration = 300;
   const textEffect = typingEffect(text, duration);
+  const navigate = useNavigate();
 
   const handleClick = () => {
     const projectsSection = document.getElementById("projects");
-
+    navigate("/projects");
     if (projectsSection) {
       const yOffset =
         projectsSection.getBoundingClientRect().top + window.scrollY - 100;

@@ -143,7 +143,7 @@ const Projects = () => {
         ))}
       </div>
       {/*Have a button, that will expand the projects but only show 3 so far */}
-      <button className="btn" onClick={handleShowMore}>
+      <button className="btn projectBtn" onClick={handleShowMore}>
         {expanded ? "Show Less" : "See More Projects"}
       </button>
     </section>

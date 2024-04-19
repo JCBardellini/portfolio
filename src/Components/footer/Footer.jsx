@@ -1,9 +1,9 @@
 import React from "react";
-import css from "./footer.module.css";
+import "./footer.scss";
 
 const Footer = () => {
   return (
-    <footer id={css.footer}>
+    <footer id="footer">
       <p>Designed & Developed by JC Bardellini</p>
       <p>© 2024 JC Bardellini. All rights reserved.</p>
     </footer>

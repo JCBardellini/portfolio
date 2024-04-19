@@ -57,7 +57,6 @@ const About = () => {
         </div>
         <div className="imgContainer">
           <div className="imgBorder"></div>
-          {/* add a carousel of imgs */}
           <img className="responsiveImg" src={userImg} alt="Jc Bardellini" />
         </div>
       </div>

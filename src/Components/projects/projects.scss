@@ -5,15 +5,19 @@
     flex-direction: column;
     width: 99%;
     align-items: center;
+    // margin: 40px 0;
 
     .projectContainer {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        margin: 50px 0px 50px 20px;
-
+        margin: 40px 0;
+        padding-left: 20px;
         .eachProjectContainer {
             display: flex;
         }
+    }
+    .projectBtn {
+        margin-bottom: 30px;
     }
 }

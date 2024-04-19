@@ -19,17 +19,16 @@ const Contact = () => {
       alt: "LinkedIn Icon",
     },
     {
+      // need to add my resume, updated one
       id: 3,
       iconSrc: fileDoc,
       link: "",
       alt: "Resume Icon",
     },
   ];
-  // when clicking on "let's connect" it opens the email
   const onClickEmail = () => {
     window.open("mailto:jc.bardellini12@gmail.com");
   };
-  // link to icons
   const onClickIconLink = (link) => {
     if (link) {
       window.open(link, "_blank", "noopener noreferrer");

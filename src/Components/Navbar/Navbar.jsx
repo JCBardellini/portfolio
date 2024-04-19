@@ -3,28 +3,39 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import "./navbar.scss";
 import logo from "../../assets/Logo/JCTransparent.svg";
 import resume from "../../assets/Resume/Bardellini_Resume.pdf";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  //  State for the dropdown menu
   const [isMobileView, setIsMobileView] = useState(false);
+  const [currentPath, setCurrentPath] = useState("");
+  const navigate = useNavigate();
 
-  // the links on the navbar
   const navLink = [
     { name: "0.1 About", route: "/about" },
     { name: "0.2 Work Experience", route: "/work-experience" },
     { name: "0.3 Projects", route: "/projects" },
     { name: "0.4 Contact", route: "/contact" },
   ];
+
   const handleDownload = () => {
     window.open(resume, "_blank");
   };
+
   const handleClickMenu = () => {
     setIsMobileView(!isMobileView);
   };
+
   const handleScrollToTop = () => {
     scroll.scrollToTop({
       duration: 2000,
     });
+    navigate("/");
+  };
+
+  const handleNavLinkClick = (route) => () => {
+    // setCurrentPath(route);
+    navigate(`${route}`);
+    // console.log("Current Path:", route);
   };
 
   return (
@@ -45,6 +56,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-150}
                 duration={1000}
+                onClick={handleNavLinkClick(nav.route)}
               >
                 {nav.name}
               </ScrollLink>
