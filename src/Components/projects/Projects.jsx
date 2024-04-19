@@ -8,6 +8,7 @@ import "./projects.scss";
 const Projects = () => {
   const [showProject, setShowProject] = useState(3);
   const [expanded, setExpanded] = useState();
+
   const projectsCompleted = [
     {
       id: 11,
