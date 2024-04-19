@@ -18,3 +18,8 @@
         margin-right: auto;
     }
 }
+@media (max-width: $tabletBreakpoint) {
+    #header {
+        height: 95vh;
+    }
+}
