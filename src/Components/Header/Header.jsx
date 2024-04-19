@@ -1,11 +1,11 @@
 import React from "react";
 import "./header.scss";
-import typingEffect from "../Hooks/Animation/typingEffect";
+import typingEffect from "../utils/Animation/typingEffect";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const text = "c Bardellini!";
-  const duration = 300;
+  const duration = 200;
   const textEffect = typingEffect(text, duration);
   const navigate = useNavigate();
 

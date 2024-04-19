@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+
+.preloader {
+    height: 100vh;
+    width: 100%;
+    background-color: $backgroundColor;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 155;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: $textColor;
+    .textContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        width: auto;
+        gap: 5px;
+        font-size: 2rem;
+        overflow: hidden;
+        transition: all 1s ease;
+        color: $textColor;
+    }
+    
+}
+
+@media (max-width: $tabletBreakpoint) {
+    .preloader {
+        .textContainer {
+            font-size: 1.5rem;
+        }
+    }
+}
