@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const text = "c Bardellini!";
-  const duration = 200;
+  const duration = 175;
   const textEffect = typingEffect(text, duration);
   const navigate = useNavigate();
 

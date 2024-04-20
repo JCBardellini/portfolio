@@ -3,6 +3,9 @@ import liveSiteIcon from "../../assets/Icons/liveSite.png";
 import figmaIcon from "../../assets/Icons/figma.png";
 import gitHub from "../../assets/Icons/gitHub.png";
 import caseStudy from "../../assets/Icons/case-study.png";
+import freeSense from "../../assets/img/freesense.png";
+import sammiNails from "../../assets/img/samminails.png";
+import projectPulse from "../../assets/img/projectpulse.png";
 import "./projects.scss";
 
 const Projects = () => {
@@ -13,14 +16,15 @@ const Projects = () => {
     {
       id: 11,
       client: true,
-      title: "Standpat (MVP)",
+      title: "FreeSense",
       description:
         "An author portfolio to showcase and sell his book. The connections that he has made with the public as a educator, peer or anyone that he came across his life.",
-      image: "",
+      image: freeSense,
       techStack: "React js, Express, Nodemailer, SCSS, etc",
-      github: "",
-      figma: "",
-      liveSite: "",
+      github: "https://github.com/JCBardellini/Standpat",
+      figma:
+        "https://www.figma.com/file/DhDLKc8vLRlxTVoOYhEU2z/StandPat---Patrick-Okocha-II?type=design&node-id=0%3A1&mode=design&t=fkcdufvThTeE0wkC-1",
+      liveSite: "https://www.freesensebook.com",
       caseStudy: "",
     },
     {
@@ -29,7 +33,7 @@ const Projects = () => {
       title: "Sammi Nails Spa",
       description:
         "A service website for a nail salon located in Mill Creek, WA. The website embodies a minimalistic design approach with a modern layout and style. It offers guests the convenience of subscribing to promotions, ensuring they stay informed about any events or discounts the salon is currently offering.",
-      image: "",
+      image: sammiNails,
       techStack: "React.js, Mongodb, Express, Nodemailer, etc",
       gitHub: "https://github.com/JCBardellini/Sammi_Nails_Spa",
       liveSite: "https://samminailsspa.com/",
@@ -43,10 +47,10 @@ const Projects = () => {
       title: "Project Pulse",
       description:
         "A project management web app that enables users to seamlessly add projects, employees, and task with full CRUD ( Create, Read, Update, Delete ) capabilities. THe objective was to introduce a new version of a project tracking tool, integrating multiple factors for a comprehensive and effective project management experience.",
-      image: "",
+      image: projectPulse,
       techStack: "React.js, Mongodb, Express, User Auth, useContext, etc.",
-      gitHub: "adasd",
-      liveSite: "addas",
+      gitHub: "",
+      liveSite: "",
       caseStudy: "",
     },
     {
@@ -57,8 +61,8 @@ const Projects = () => {
         "A Spotify Clone that retrieves information from Spotify, providing users with the ability to search for music and podcast. The clone allows users to listen to a preview of the selected song or podcast. To manage the incoming data, I utilized the useContext feature, ensuring a seamless experience when users request information. ",
       image: "",
       techStack: "React.js, Spotify API, useContext, Local Storage, etc.",
-      gitHub: "ads",
-      liveSite: "adsa",
+      gitHub: "",
+      liveSite: "",
       caseStudy: "",
     },
     {
@@ -69,8 +73,8 @@ const Projects = () => {
         "A weather app that presents real-time weather information for any city in the US. Utilizing the openweathermap API, the app gathers the necessary data to display accurate weather details. Additionally, the app employs local storage to save incoming data. It also features a task notepad, allowing users to add task based on the current weather conditions.",
       image: "",
       techStack: "HTML5, CSS3, JavaScript, Open Weather Map API, etc.",
-      gitHub: "asdda",
-      liveSite: "asdadsa",
+      gitHub: "",
+      liveSite: "",
       caseStudy: "",
     },
   ];
@@ -113,13 +117,13 @@ const Projects = () => {
       <div className="projectContainer">
         {projectsCompleted.slice(0, showProject).map((eachProject) => (
           <div key={eachProject.id} className="eachProjectContainer">
-            <div>
+            <div className="imageContainer">
               <p className="clientTitle">
                 {eachProject.client ? "Client" : "Personal"} Project
               </p>
               <img src={eachProject.image} alt={eachProject.title} />
             </div>
-            <div>
+            <div className="projectDescriptionContainer">
               <h3>{eachProject.title}</h3>
               <p>{eachProject.description}</p>
               <p>Tech Stack</p>
@@ -134,7 +138,7 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <img src={icon.icon} alt={icon.alt} />
+                        <img src={icon.icon} alt={icon.alt} className="icon" />
                       </a>
                     )
                 )}
