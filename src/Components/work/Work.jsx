@@ -16,16 +16,16 @@ const Work = () => {
         "Optimize client communication, achieving fast turnarounds within a week, ensuring repeat customers, and maintaining a 90% client satisfaction rate based on post-project surveys.",
       ],
     },
-    {
-      company: "Flo Sushi Bar",
-      role: "Server",
-      date: "December 2022 - Present",
-      description: [
-        "Provide outstanding customer service by ensuring effective communication skills and accessing solutions to their problems.",
-        "Maintain a high level of order accuracy and attention to detail, resulting in fewer errors and 95% satisfaction customer rate.",
-        "Assist customers with their orders, ensuring they receive the correct items.",
-      ],
-    },
+    // {
+    //   company: "Flo Sushi Bar",
+    //   role: "Server",
+    //   date: "December 2022 - Present",
+    //   description: [
+    //     "Provide outstanding customer service by ensuring effective communication skills and accessing solutions to their problems.",
+    //     "Maintain a high level of order accuracy and attention to detail, resulting in fewer errors and 95% satisfaction customer rate.",
+    //     "Assist customers with their orders, ensuring they receive the correct items.",
+    //   ],
+    // },
     {
       company: "California Closets",
       role: "Designer",
@@ -66,7 +66,7 @@ const Work = () => {
       <div className="titleContainer">
         <h3 className="sectionNumber">0.2</h3>
         <span className="line"></span>
-        <h3 className="sectionTitle">Places I've Worked</h3>
+        <h3 className="sectionTitle">Professional Journey</h3>
         <span className="line"></span>
       </div>
       <div className="workContainer">
