@@ -29,9 +29,9 @@ const Header = () => {
       <p>Hi, my name is</p>
       <h1 className="title">J{textEffect}</h1>
       <p className="description">
-        I am a Designer and Developer dedicated to crafting digital experiences
-        and solutions to your everyday challenge. With a focus on expanding my
-        knowledge in software development, I specialize in creating tailored
+        I am a Software Developer dedicated to crafting digital experiences and
+        solutions to your everyday challenge. With a focus on expanding my
+        knowledge in software engineering, I specialize in creating tailored
         solutions for your software needs. Let's build something amazing
         together!
       </p>
