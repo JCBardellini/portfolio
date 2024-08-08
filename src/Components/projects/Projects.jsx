@@ -6,6 +6,7 @@ import caseStudy from "../../assets/Icons/case-study.png";
 import freeSense from "../../assets/img/freesense.png";
 import sammiNails from "../../assets/img/samminails.png";
 import projectPulse from "../../assets/img/projectpulse.png";
+import weatherApp from "../../assets/img/weatherApp.png";
 import "./projects.scss";
 
 const Projects = () => {
@@ -71,11 +72,10 @@ const Projects = () => {
       title: "Weather App",
       description:
         "A weather app that presents real-time weather information for any city in the US. Utilizing the openweathermap API, the app gathers the necessary data to display accurate weather details. Additionally, the app employs local storage to save incoming data. It also features a task notepad, allowing users to add task based on the current weather conditions.",
-      image: "",
+      image: weatherApp,
       techStack: "HTML5, CSS3, JavaScript, Open Weather Map API, etc.",
-      gitHub: "",
-      liveSite: "",
-      caseStudy: "",
+      gitHub: "https://github.com/JCBardellini/weather_App",
+      liveSite: "https://bardellini-weather-app.netlify.app",
     },
   ];
   const projectIcons = [

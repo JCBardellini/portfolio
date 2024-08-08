@@ -6,7 +6,7 @@ import userImg from "../../assets/img/userImg.png";
 const About = () => {
   const aboutMeContent = {
     paragraphOne:
-      "A creative designer/developer previously worked as an interior designer crafting unique spaces reflecting my clients' personalities. I am now transitioning into software development, fueled by my passion for creativity, problem-solving, and creating meaningful experiences through technology.",
+      "A creative software developer previously worked as an interior designer crafting unique spaces reflecting my clients' personalities. I am now transitioning into software development, fueled by my passion for creativity, problem-solving, and creating meaningful experiences through technology.",
     paragraphThree:
       "Currently freelancing to gain experience, I’m reaching out to small businesses, revamping their websites. This not only enhances their online presence but also builds lasting memories and friendships, aligning with my goal of contributing meaningfully to the community through technology.",
   };
