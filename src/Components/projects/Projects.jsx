@@ -105,7 +105,11 @@ const Projects = () => {
     setExpanded(!expanded);
     setShowProject(expanded ? 3 : projectsCompleted.length);
   };
-
+  const handleOpenClick = (url) => {
+    if (url) {
+      window.open(url, "_blank", "noopener noreferrer");
+    }
+  };
   return (
     <section id="projects">
       <div className="titleContainer">
@@ -124,7 +128,9 @@ const Projects = () => {
               <img src={eachProject.image} alt={eachProject.title} />
             </div>
             <div className="projectDescriptionContainer">
-              <h3>{eachProject.title}</h3>
+              <h3 onClick={() => handleOpenClick(eachProject.liveSite)}>
+                {eachProject.title}
+              </h3>
               <p>{eachProject.description}</p>
               <p>Tech Stack</p>
               <p>{eachProject.techStack}</p>
